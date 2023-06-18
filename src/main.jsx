@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import AddCourseComponent from './pages/admin_pages/AddCourseComponent.jsx'
 import AddSkillComponent from './pages/admin_pages/AddSkillComponent.jsx'
+import SignIn from './pages/public_pages/Auth/SignIn.jsx'
 import SkillDetailsPage from './pages/public_pages/SkillDetails.jsx'
 import SkillsPage from './pages/Skills.jsx'
 
@@ -13,6 +14,10 @@ const router = createBrowserRouter(
 		{
 			path: '/',
 			element: <App />
+		},
+		{
+			path: '/login',
+			element: <SignIn/>
 		},
 		{
 			path: '/skills',

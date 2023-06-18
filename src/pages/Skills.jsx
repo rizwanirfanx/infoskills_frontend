@@ -2,12 +2,12 @@ import {useEffect, useState} from "react";
 
 const SkillsPage = (props) => {
 	const [data, setData] = useState()
+	console.log("Babes we are also getting Affected")
 	useEffect(() => {
 		const fetchSkillsData = async () => {
 			try {
 				const response = await fetch('http://127.0.0.1:4003/skills')
 				const data = await response.json()
-				console.log(data)
 				setData(data)
 			}
 			catch (error) {
